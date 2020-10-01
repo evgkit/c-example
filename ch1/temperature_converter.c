@@ -1,9 +1,23 @@
 #include <stdio.h>
-#define CTEMP 36.6
 
-int main(void) {
-    printf("Celsius to Fahrenheit:\n");
-    printf("%3.1f -> %3.1f \n", CTEMP, (9.0/5.0) * CTEMP + 32.0);
+int main()
+
+{
+
+    float celsius, fahrenheit;
+
+    /* Input temperature in celsius */
+
+    printf("Enter temperature in Celsius: ");
+
+    scanf("%f", &celsius);
+
+    /* celsius to fahrenheit conversion formula */
+
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    printf("%.2f Celsius = %.2f Fahrenheit", celsius, fahrenheit);
+
     return 0;
-}
 
+}
